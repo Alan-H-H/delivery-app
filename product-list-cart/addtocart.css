@@ -1,15 +1,14 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'red hat text', sans-serif;
-    font-size: 16px;
-    background-color: hsl(20, 50%, 98%);
-}
+
 body{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    font-family: 'red hat text', sans-serif;
+    font-size: 16px;
+    background-color: hsl(20, 50%, 98%);
 }
 .header{
     height: 4em;
