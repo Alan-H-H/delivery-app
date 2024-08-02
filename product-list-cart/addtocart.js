@@ -140,9 +140,10 @@ function delElement(a){
     cart.splice(a, 1);
     displaycart();
 }
-function startnew(){
-    location.reload();
-}
+//function startnew(){
+//    location.reload();
+//}
+
 function confirmOrder(){
     document.querySelector('.sidebar').className = 'confirm';
     document.querySelector('#root').className = 'confirmed';
