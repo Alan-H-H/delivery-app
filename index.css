@@ -1,0 +1,269 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'red hat text', sans-serif;
+    font-size: 16px;
+    background-color: hsl(20, 50%, 98%);
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.header{
+    height: 4em;
+    width: 70%;
+    margin: 30px 0px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+.header .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: hsl(14, 65%, 9%);
+}
+.cart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+.fa-solid{
+    color: hsl(14, 86%, 42%);
+}
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    color: white;
+}
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 20px;
+}
+#root{
+    width: 70%;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-gap: 10px;
+}
+.sidebar{
+    width: 30%;
+    margin-left: 1em;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.head{
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: hsl(14, 86%, 42%);
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+.head p{
+    background-color: white;
+}
+.foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    background-color: white;
+    padding: 10px 0px;
+}
+.foot h3, h2{
+    background-color: white;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 5px;
+    padding: 15px;
+}
+.img-box{
+    width: 100%;
+    height: 200px;
+    display: flex;
+}
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 110px;
+}
+.bottom h2{
+    background-color: hsl(20, 50%, 98%);
+}
+h2{
+    font-size: 14px;
+    color: hsl(14, 86%, 42%);
+}
+button{
+    width: 40%;
+    border-radius: 25px;
+    padding: 1px 3px;
+    cursor: pointer;
+    font-size: 14px;
+    border: 1px solid hsl(14, 86%, 42%);
+    color: hsl(14, 86%, 42%);
+    background-color: white;
+}
+button:hover{
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+}
+
+.fa-cart-shopping{
+    font-size: 12px;
+}
+.fa-cart-shopping:hover{
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+}
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin: 10px 10px;
+    background-color: white;
+}
+.cart-item p{
+    background-color: white;
+}
+.cart-item img{
+    display: none;
+}
+#cartItem{
+    background-color: white;
+}
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+.confirm{
+    width: 100%;
+    background-color: white;
+    padding: 1em;
+}
+.confirm p{
+    background-color: white;
+}
+.confirm a{
+    display: flex;
+    width: 50%;
+    border-radius: 25px;
+    padding: 0.2em;
+    cursor: pointer;
+    border: 1px solid hsl(14, 86%, 42%);
+    background-color: white;
+    color: hsl(14, 86%, 42%);
+    text-decoration: none;
+}
+.confirm a:hover{
+    background-color: hsl(14, 86%, 42%);
+    color: white;
+}
+.confirm button{
+    display: none;
+}
+.confirm img{
+    display: flex;
+    height: 50px;
+    border-radius: 2em;
+}
+.confirm i{
+    display: none;
+}
+.sidebar a{
+    display: none;
+}
+.confirm-btn{
+    display: none;
+}
+.confirmed button{
+    display: none;
+}
+@media (max-width: 1400px){
+    .container{
+        display: flex;
+        width: 100%;
+    }
+    #root{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 350px);
+        grid-gap: 10px;
+        justify-content: center;
+        margin-left: 30px;
+    }
+    .img-box{
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .sidebar, .confirm{
+        width: 40%;
+        margin-left: 40px;
+        border-radius: 5px;
+        background-color: white;
+        padding: 0px;
+    }
+}
+@media (max-width: 700px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    #root{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 350px);
+        grid-gap: 10px;
+        justify-content: center;
+    }
+    .img-box{
+        width: 100%;
+        height: 300px;
+        display: flex;
+    }
+    .sidebar, .confirm{
+        width: 75%;
+        margin-left: 40px;
+        border-radius: 5px;
+        background-color: white;
+        padding: 0px;
+    }
+}
