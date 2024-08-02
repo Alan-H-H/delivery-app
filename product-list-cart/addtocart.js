@@ -163,7 +163,7 @@ function displaycart(){
             document.getElementById("total").innerHTML = "$ "+total.toFixed(2);
             return(
                 `<div class='cart-item'>
-                <img src="${image.desktop}"/>
+                <img src="${image.thumbnail}"/>
                 <p style='font-size:12px;'>${name}</p>
                 <h2 style='font-size: 15px;'>$ ${price.toFixed(2)}</h2>`+
                 "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i>"+`</div>`
