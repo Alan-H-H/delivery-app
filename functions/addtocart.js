@@ -2,7 +2,7 @@ fetch('./data.json')
     .then((response) => response.json())
     .then((json) => console.log(json));
 
-const categories = [...new Set(data.map((item)=>
+const categories = [...new Set(json.map((item)=>
     {return item}))]
     let i=0;
 document.getElementById('root').innerHTML = categories.map((item)=>
