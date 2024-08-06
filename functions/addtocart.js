@@ -1,6 +1,4 @@
-fetch('cart.json')
-.then()(respone =>response.json)
-.then()(data => console.log(data))
+import data from "data.json"
 
 const categories = [...new Set(product.map((item)=>
     {return item}))]
