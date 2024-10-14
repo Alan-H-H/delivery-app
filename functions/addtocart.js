@@ -161,13 +161,14 @@ function displaycart(){
             var { name, price, image} = items;
             total=total+price;
             document.getElementById("total").innerHTML = "$ "+total.toFixed(2);
-            return(
+            return (
                 `<div class='cart-item'>
-                <img src="${image.desktop}"/>
-                <p style='font-size:12px;'>${name}</p>
-                <h2 style='font-size: 15px;'>$ ${price.toFixed(2)}</h2>`+
-                "<i class='fa-solid fa-trash' onclick='delElement("+ (j++) +")'></i>"+`</div>`
-            );
+                   <img src="${image.desktop}" />
+                   <p style='font-size:12px;'>${name}</p>
+                   <h2 style='font-size: 15px;'>$ ${price.toFixed(2)}</h2>
+                   <i class='fa-solid fa-trash' onclick='delElement(${j++})'></i>
+                 </div>`
+            )
         }).join('');
     }
 }
